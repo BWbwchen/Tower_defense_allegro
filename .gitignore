@@ -1,0 +1,16 @@
+*.dev
+*.exe
+*.layout
+*.o
+*.win
+*.DS_Store
+*.xcodeproj
+*.cbp
+*.depend
+*.layout
+*.exe
+*.o
+*.out
+*.in
+.vscode
+*.sh
