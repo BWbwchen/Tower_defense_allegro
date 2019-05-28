@@ -8,8 +8,12 @@ ALLEGRO = `pkg-config --libs allegro-5 allegro_font-5 allegro_ttf-5 allegro_dial
 LIB = -I..
 
 all: 
-	$(CC) -c main.cpp
-	$(CC) $(CFLAG) -o $(TARGET) $(LIB) $(OBJFILE) main.o $(ALLEGRO) 
+	$(CC) -c -g main.cpp
+	$(CC) $(CFLAG) $(LIB) -o $(TARGET) $(OBJFILE) main.o $(ALLEGRO) 
+	./$(TARGET)
 
 compile: 
-	$(CC) -c $(SOURCEFILE)
+	$(CC) -c -g $(SOURCEFILE)
+
+fuck:
+	$(CC) $(CFLAG) -o $(TARGET) $(LIB) $(SOURCEFILE) $(ALLEGRO) 

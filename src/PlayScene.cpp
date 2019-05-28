@@ -1,4 +1,5 @@
 #include <allegro5/allegro.h>
+#include <iostream>
 #include <cmath>
 #include <fstream>
 #include <functional>
@@ -29,7 +30,7 @@
 
 bool PlayScene::DebugMode = false;
 const std::vector<Engine::Point> PlayScene::directions = { Engine::Point(-1, 0), Engine::Point(0, -1), Engine::Point(1, 0), Engine::Point(0, 1) };
-const int PlayScene::MapWidth = 20, PlayScene::MapHeight = 13;
+const int PlayScene::MapWidth = 16, PlayScene::MapHeight = 9;
 const int PlayScene::BlockSize = 64;
 const Engine::Point PlayScene::SpawnGridPoint = Engine::Point(-1, 0);
 const Engine::Point PlayScene::EndGridPoint = Engine::Point(MapWidth, MapHeight - 1);
@@ -300,33 +301,34 @@ void PlayScene::ReadEnemyWave() {
 	fin.close();
 }
 void PlayScene::ConstructUI() {
+	float start = 1024;
 	// Background
-	UIGroup->AddNewObject(new Engine::Image("play/sand.png", 1280, 0, 320, 832));
+	UIGroup->AddNewObject(new Engine::Image("play/sand.png", start, 0, 320, 832));
 	// Text
-	UIGroup->AddNewObject(new Engine::Label(std::string("Stage ") + std::to_string(MapId), "pirulen.ttf", 32, 1294, 0));
-	UIGroup->AddNewObject(UIMoney = new Engine::Label(std::string("$") + std::to_string(money), "pirulen.ttf", 24, 1294, 48));
-	UIGroup->AddNewObject(UILives = new Engine::Label(std::string("Life ") + std::to_string(lives), "pirulen.ttf", 24, 1294, 88));
+	UIGroup->AddNewObject(new Engine::Label(std::string("Stage ") + std::to_string(MapId), "pirulen.ttf", 32, start, 0));
+	UIGroup->AddNewObject(UIMoney = new Engine::Label(std::string("$") + std::to_string(money), "pirulen.ttf", 24, start, 48));
+	UIGroup->AddNewObject(UILives = new Engine::Label(std::string("Life ") + std::to_string(lives), "pirulen.ttf", 24, start, 88));
 	TurretButton* btn;
 	// Button 1
 	btn = new TurretButton("play/floor.png", "play/dirt.png",
-		Engine::Sprite("play/tower-base.png", 1294, 136, 0, 0, 0, 0),
-		Engine::Sprite("play/turret-1.png", 1294, 136 - 8, 0, 0, 0, 0)
-		, 1294, 136, MachineGunTurret::Price);
+		Engine::Sprite("play/tower-base.png", start, 136, 0, 0, 0, 0),
+		Engine::Sprite("play/turret-1.png", start, 136 - 8, 0, 0, 0, 0)
+		, start, 136, MachineGunTurret::Price);
 	// Reference: Class Member Function Pointer and std::bind.
 	btn->SetOnClickCallback(std::bind(&PlayScene::UIBtnClicked, this, 0));
 	UIGroup->AddNewControlObject(btn);
 	// Button 2
 	btn = new TurretButton("play/floor.png", "play/dirt.png",
-		Engine::Sprite("play/tower-base.png", 1370, 136, 0, 0, 0, 0),
-		Engine::Sprite("play/turret-2.png", 1370, 136 - 8, 0, 0, 0, 0)
-		, 1370, 136, LaserTurret::Price);
+		Engine::Sprite("play/tower-base.png", start+76, 136, 0, 0, 0, 0),
+		Engine::Sprite("play/turret-2.png", start+76, 136 - 8, 0, 0, 0, 0)
+		, start+76, 136, LaserTurret::Price);
 	btn->SetOnClickCallback(std::bind(&PlayScene::UIBtnClicked, this, 1));
 	UIGroup->AddNewControlObject(btn);
 	// Button 3
 	btn = new TurretButton("play/floor.png", "play/dirt.png",
-		Engine::Sprite("play/tower-base.png", 1446, 136, 0, 0, 0, 0),
-		Engine::Sprite("play/turret-3.png", 1446, 136, 0, 0, 0, 0)
-		, 1446, 136, MissileTurret::Price);
+		Engine::Sprite("play/tower-base.png", start+152, 136, 0, 0, 0, 0),
+		Engine::Sprite("play/turret-3.png", start+152, 136, 0, 0, 0, 0)
+		, start+152, 136, MissileTurret::Price);
 	btn->SetOnClickCallback(std::bind(&PlayScene::UIBtnClicked, this, 2));
 	UIGroup->AddNewControlObject(btn);
 	// TODO 2 (3/8): Create a button to support constructing the 4th tower.
@@ -387,13 +389,28 @@ std::vector<std::vector<int>> PlayScene::CalculateBFSDistance() {
 		return map;
 	que.push(Engine::Point(MapWidth - 1, MapHeight - 1));
 	map[MapHeight - 1][MapWidth - 1] = 0;
+	
 	while (!que.empty()) {
 		Engine::Point p = que.front();
 		que.pop();
 		// TODO 3 (1/1): Implement a BFS starting from the most right-bottom block in the map.
 		//               For each step you should assign the corresponding distance to the most right-bottom block.
 		//               mapState[y][x] is TILE_DIRT if it is empty.
-		throw std::logic_error("CalculateBFSDistance is not implemented yet.");
+		//throw std::logic_error("CalculateBFSDistance is not implemented yet.");
+        //std::cout << p.x << " " << p.y << std::endl;
+		int px = p.x;
+        int py = p.y;
+        for (Engine::Point direct: PlayScene::directions) {
+            if (px + direct.x < MapWidth && px + direct.x >= 0 && py + direct.y < MapHeight && py + direct.y >= 0) {
+                if(mapState[py+direct.y][px+direct.x] == TILE_DIRT) {
+                    if (map[py+direct.y][px+direct.x] == -1 ) {
+                        que.push(Engine::Point(px+direct.x, py+direct.y));
+                        map[py+direct.y][px+direct.x] = map[py][px] + 1;
+                    }
+                }
+            }
+        }
 	}
+	
 	return map;
 }
