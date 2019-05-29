@@ -117,6 +117,7 @@ void PlayScene::Update(float deltaTime) {
 	// TODO 2 (8/8): Enable the creation of the 4th enemy.
 		case 4:
 			EnemyGroup->AddNewObject(enemy = new MySoldier(SpawnCoordinate.x, SpawnCoordinate.y));
+			break;
 		default:
 			continue;
 		}
