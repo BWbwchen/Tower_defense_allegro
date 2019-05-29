@@ -47,7 +47,7 @@ void PlayScene::Initialize() {
 	keyStrokes.clear();
 	ticks = 0;
 	lives = 10;
-	money = 150;
+	money = 150000;
 	SpeedMult = 1;
 	// Add groups from bottom to top.
 	AddNewObject(TileMapGroup = new Group());
@@ -397,7 +397,6 @@ std::vector<std::vector<int>> PlayScene::CalculateBFSDistance() {
 		//               For each step you should assign the corresponding distance to the most right-bottom block.
 		//               mapState[y][x] is TILE_DIRT if it is empty.
 		//throw std::logic_error("CalculateBFSDistance is not implemented yet.");
-        //std::cout << p.x << " " << p.y << std::endl;
 		int px = p.x;
         int py = p.y;
         for (Engine::Point direct: PlayScene::directions) {
