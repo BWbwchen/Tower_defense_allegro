@@ -16,12 +16,20 @@ Slider::Slider(float x, float y, float w, float h) :
 // TODO 4 (0/6): Finish the 6 functions below and ensure it can control both BGM and SFX volume.
 //               The slider shouldn't be dragged outside the bar, and you should also keep the mouse-in / mouse-out effect.
 void Slider::Draw() const {
+	Bar.Engine::Image::Draw();
+	End1.Engine::Image::Draw();
+	End2.Engine::Image::Draw();
+	Engine::Image::Draw();
 	// TODO 4 (1/6): Draw all components.
 }
 void Slider::SetOnValueChangedCallback(std::function<void(float value)> onValueChangedCallback) {
+	OnValueChangedCallback = onValueChangedCallback;
 	// TODO 4 (2/6): Set the function pointer. Can imitate ImageButton's 'SetOnClickCallback'.
 }
 void Slider::SetValue(float value) {
+	if (OnValueChangedCallback)
+		OnValueChangedCallback(value);
+
 	// TODO 4 (3/6): Call 'OnValueChangedCallback' when value changed. Can imitate ImageButton's 'OnClickCallback'.
 	//               Also move the slider along the bar, to the corresponding position.
 }

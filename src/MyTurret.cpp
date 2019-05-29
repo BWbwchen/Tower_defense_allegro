@@ -9,7 +9,7 @@
 #include "PlayScene.hpp"
 #include "Point.hpp"
 
-const int MyTurret::Price = 50;
+const int MyTurret::Price = 100;
 MyTurret::MyTurret(float x, float y) :
 	Turret("play/tower-base.png", "play/turret-6.png", x, y, 200, Price, 0.5) {
 	// Move center downward, since we the turret head is slightly biased upward.
