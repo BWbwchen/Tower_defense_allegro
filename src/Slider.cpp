@@ -2,16 +2,15 @@
 #include <algorithm>
 #include <string>
 
-#include "Collider.hpp"
 #include "Point.hpp"
 #include "Slider.hpp"
-#include "GameEngine.hpp"
 
 Slider::Slider(float x, float y, float w, float h) :
 	ImageButton("stage-select/slider.png", "stage-select/slider-blue.png", x, y),
 	Bar("stage-select/bar.png", x, y, w, h),
 	End1("stage-select/end.png", x, y + h / 2, 0, 0, 0.5, 0.5),
-	End2("stage-select/end.png", x + w, y + h / 2, 0, 0, 0.5, 0.5) {
+	End2("stage-select/end.png", x + w, y + h / 2, 0, 0, 0.5, 0.5) 
+	{
 	Position.x += w;
 	Position.y += h / 2;
 	Anchor = Engine::Point(0.5, 0.5);
@@ -30,23 +29,36 @@ void Slider::SetOnValueChangedCallback(std::function<void(float value)> onValueC
 	// TODO 4 (2/6): Set the function pointer. Can imitate ImageButton's 'SetOnClickCallback'.
 }
 void Slider::SetValue(float value) {
-	if (OnValueChangedCallback)
+	if (OnValueChangedCallback) {
+		std::cout << "call\n";
 		OnValueChangedCallback(value);
-
+	}
+	else std::cout << "fuck\n";
 	// TODO 4 (3/6): Call 'OnValueChangedCallback' when value changed. Can imitate ImageButton's 'OnClickCallback'.
 	//               Also move the slider along the bar, to the corresponding position.
 }
 void Slider::OnMouseDown(int button, int mx, int my) {
-	Engine::Point mouse = Engine::GameEngine::GetInstance().GetMousePosition();
-	Down = Engine::Collider::IsPointInRect(mouse, Bar.Position, Bar.Size);
-	if (Down) std::cout <<"in bar\n";
-	else std::cout << "out of bar\n";
+	ImageButton::OnMouseDown(button, mx, my);
+	if (mouseIn) Down = true;
+	else Down = false; 
 	// TODO 4 (4/6): Set 'Down' to true if mouse is in the slider.
 }
 void Slider::OnMouseUp(int button, int mx, int my) {
 	Down = false;
+	ImageButton::OnMouseUp(button, mx, my);
 	// TODO 4 (5/6): Set 'Down' to false.
 }
 void Slider::OnMouseMove(int mx, int my) {
+	ImageButton::OnMouseMove(mx, my);
+	// calulate value
+	std::cout << "new func\n";
+	if (!Down || !mouseIn) return;
+	if (mx < End1.Position.x || End2.Position.x < mx) return;
+	float length = (float )(End2.Position.x - End1.Position.x);
+	float dvalue = (float )(mx - End1.Position.x) / length;
+	this->Position.x = mx;
+	// call setvalue
+	SetValue(dvalue);
+
 	// TODO 4 (6/6): Clamp the coordinates and calculate the value. Call 'SetValue' when you're done.
 }
