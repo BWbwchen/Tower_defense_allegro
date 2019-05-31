@@ -99,7 +99,7 @@ void PlayScene::Update(float deltaTime) {
 				// so My first thought is to find whether the probel m is delete, and 
 				// Yah! I use cout method to find the weird line
 				//std::cout << "fuck pictur\n";
-				delete imgTarget;
+				//delete imgTarget;
 				//std::cout << "fuck\n";
 				// Win.
 				// typo : win , not win-scene
