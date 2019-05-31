@@ -1,8 +1,11 @@
+#include <iostream>
 #include <algorithm>
 #include <string>
 
+#include "Collider.hpp"
 #include "Point.hpp"
 #include "Slider.hpp"
+#include "GameEngine.hpp"
 
 Slider::Slider(float x, float y, float w, float h) :
 	ImageButton("stage-select/slider.png", "stage-select/slider-blue.png", x, y),
@@ -34,9 +37,14 @@ void Slider::SetValue(float value) {
 	//               Also move the slider along the bar, to the corresponding position.
 }
 void Slider::OnMouseDown(int button, int mx, int my) {
+	Engine::Point mouse = Engine::GameEngine::GetInstance().GetMousePosition();
+	Down = Engine::Collider::IsPointInRect(mouse, Bar.Position, Bar.Size);
+	if (Down) std::cout <<"in bar\n";
+	else std::cout << "out of bar\n";
 	// TODO 4 (4/6): Set 'Down' to true if mouse is in the slider.
 }
 void Slider::OnMouseUp(int button, int mx, int my) {
+	Down = false;
 	// TODO 4 (5/6): Set 'Down' to false.
 }
 void Slider::OnMouseMove(int mx, int my) {

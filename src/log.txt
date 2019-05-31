@@ -27,6 +27,10 @@
 [INFO] Loaded Resource<font>: resources/fonts/pirulen.ttf with size 28
 [INFO] Loaded Resource<audio>: resources/audios/select.ogg
 [INFO] Changed to stage-select scene
+[INFO] Game Terminating...
+[INFO] Game terminated
+[INFO] Game end
+[INFO] Destroyed Resource<image>
 [INFO] Destroyed Resource<image>
 [INFO] Destroyed Resource<image>
 [INFO] Destroyed Resource<image>
@@ -37,18 +41,3 @@
 [INFO] Destroyed Resource<font>
 [INFO] Destroyed Resource<font>
 [INFO] Destroyed Resource<audio>
-[INFO] Loaded Resource<image>: resources/images/play/dirt.png scaled to 64x64
-[INFO] Loaded Resource<image>: resources/images/play/floor.png scaled to 64x64
-[INFO] Loaded Resource<image>: resources/images/play/sand.png scaled to 320x832
-[INFO] Loaded Resource<font>: resources/fonts/pirulen.ttf with size 32
-[INFO] Loaded Resource<font>: resources/fonts/pirulen.ttf with size 24
-[INFO] Loaded Resource<image>: resources/images/play/tower-base.png
-[INFO] Loaded Resource<image>: resources/images/play/turret-1.png
-[INFO] Loaded Resource<image>: resources/images/play/floor.png
-[INFO] Loaded Resource<image>: resources/images/play/dirt.png
-[INFO] Loaded Resource<image>: resources/images/play/turret-2.png
-[INFO] Loaded Resource<image>: resources/images/play/turret-3.png
-[INFO] Loaded Resource<image>: resources/images/play/turret-6.png
-[INFO] Loaded Resource<image>: resources/images/play/target.png
-[INFO] Loaded Resource<audio>: resources/audios/play.ogg
-[INFO] Changed to play scene
