@@ -44,6 +44,8 @@ Engine::Point PlayScene::GetClientSize() {
 }
 void PlayScene::Initialize() {
 	// TODO 5 (1/2): There's a bug in this file, which crashes the game when you win. Try to find it.
+	// imgTarget is belong to UIGroup, so can't delete twice
+	// change-scene to win , not win-scene
 	// TODO 5 (2/2): There's a cheat code in this file. Try to find it.
 	mapState.clear();
 	keyStrokes.clear();
@@ -68,6 +70,7 @@ void PlayScene::Initialize() {
 	imgTarget = new Engine::Image("play/target.png", 0, 0);
 	imgTarget->Visible = false;
 	preview = nullptr;
+	// imgTarget is belong to UIGroup
 	UIGroup->AddNewObject(imgTarget);
 	AudioHelper::PlayBGM("play.ogg");
 }
@@ -81,6 +84,7 @@ void PlayScene::Update(float deltaTime) {
 		if (enemyWaveData.empty()) {
 			if (EnemyGroup->GetObjects().empty()) {
 				// Free resources.
+				
 				delete TileMapGroup;
 				delete GroundEffectGroup;
 				delete DebugIndicatorGroup;
@@ -89,9 +93,18 @@ void PlayScene::Update(float deltaTime) {
 				delete BulletGroup;
 				delete EffectGroup;
 				delete UIGroup;
+				// imgTarget is belong to UIGroup
+				// so can't delete twice
+				// I use gdb , and it tell me it is the picture problem 
+				// so My first thought is to find whether the probel m is delete, and 
+				// Yah! I use cout method to find the weird line
+				//std::cout << "fuck pictur\n";
 				delete imgTarget;
+				//std::cout << "fuck\n";
 				// Win.
-				Engine::GameEngine::GetInstance().ChangeScene("win-scene");
+				// typo : win , not win-scene
+				//Engine::GameEngine::GetInstance().ChangeScene("win-scene");
+				Engine::GameEngine::GetInstance().ChangeScene("win");
 			}
 			continue;
 		}
