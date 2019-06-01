@@ -78,6 +78,7 @@ void PlayScene::Update(float deltaTime) {
 	// If we use deltaTime directly, then we might have Bullet-through-paper problem.
 	// Reference: Bullet-Through-Paper
 	for (int i = 0; i < SpeedMult; i++) {
+		//std::cout << "test for index\n";
 		IScene::Update(deltaTime);
 		// Check if we should create new enemy.
 		ticks += deltaTime;
@@ -85,21 +86,30 @@ void PlayScene::Update(float deltaTime) {
 			if (EnemyGroup->GetObjects().empty()) {
 				// Free resources.
 				
-				delete TileMapGroup;
-				delete GroundEffectGroup;
-				delete DebugIndicatorGroup;
-				delete TowerGroup;
-				delete EnemyGroup;
-				delete BulletGroup;
-				delete EffectGroup;
+				
+				
+				UIGroup->Clear();
+				Clear();
+				
+				/*
+				because the function Clear() had delete the object 
+				so no delete there
 				delete UIGroup;
+				delete EffectGroup;
+				delete BulletGroup;
+				delete EnemyGroup;
+				delete TowerGroup;
+				delete DebugIndicatorGroup;
+				delete GroundEffectGroup;
+				delete TileMapGroup;
+				*/
+				//std::cout << "fuck pictur\n";
 				// imgTarget is belong to UIGroup
 				// so can't delete twice
 				// I use gdb , and it tell me it is the picture problem 
 				// so My first thought is to find whether the probel m is delete, and 
 				// Yah! I use cout method to find the weird line
 				//std::cout << "fuck pictur\n";
-				//delete imgTarget;
 				//std::cout << "fuck\n";
 				// Win.
 				// typo : win , not win-scene

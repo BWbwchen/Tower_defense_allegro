@@ -29,11 +29,7 @@ void Slider::SetOnValueChangedCallback(std::function<void(float value)> onValueC
 	// TODO 4 (2/6): Set the function pointer. Can imitate ImageButton's 'SetOnClickCallback'.
 }
 void Slider::SetValue(float value) {
-	if (OnValueChangedCallback) {
-		std::cout << "call\n";
-		OnValueChangedCallback(value);
-	}
-	else std::cout << "fuck\n";
+	if (OnValueChangedCallback) OnValueChangedCallback(value);
 	// TODO 4 (3/6): Call 'OnValueChangedCallback' when value changed. Can imitate ImageButton's 'OnClickCallback'.
 	//               Also move the slider along the bar, to the corresponding position.
 }
@@ -51,7 +47,6 @@ void Slider::OnMouseUp(int button, int mx, int my) {
 void Slider::OnMouseMove(int mx, int my) {
 	ImageButton::OnMouseMove(mx, my);
 	// calulate value
-	std::cout << "new func\n";
 	if (!Down || !mouseIn) return;
 	if (mx < End1.Position.x || End2.Position.x < mx) return;
 	float length = (float )(End2.Position.x - End1.Position.x);
