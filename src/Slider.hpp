@@ -11,7 +11,7 @@ private:
 	Image End1;
 	Image End2;
 	std::function<void(float value)> OnValueChangedCallback;
-	float value = 0;
+	float value = 1;
 public:
 	const float Min = 0;
 	const float Max = 1;
