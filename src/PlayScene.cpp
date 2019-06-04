@@ -29,6 +29,8 @@
 #include "TankEnemy.hpp"
 #include "Turret.hpp"
 #include "TurretButton.hpp"
+#include "Slider.hpp"
+#include "ImageButton.hpp"
 
 bool PlayScene::DebugMode = false;
 const std::vector<Engine::Point> PlayScene::directions = { Engine::Point(-1, 0), Engine::Point(0, -1), Engine::Point(1, 0), Engine::Point(0, 1) };

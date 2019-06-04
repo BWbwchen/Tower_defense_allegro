@@ -1,0 +1,487 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+ALLEGRO	Makefile	/^ALLEGRO = `pkg-config --libs allegro-5 allegro_font-5 allegro_ttf-5 allegro_dialog-5 allegro_pri/;"	m
+ALLEGRO5EXCEPTION_HPP	Allegro5Exception.hpp	/^#define ALLEGRO5EXCEPTION_HPP$/;"	d
+AUDIOHELPER_HPP	AudioHelper.hpp	/^#define AUDIOHELPER_HPP$/;"	d
+AddNewControl	Group.cpp	/^	void Group::AddNewControl(IControl* ctrl) {$/;"	f	class:Engine::Group	typeref:typename:void
+AddNewControlObject	Group.cpp	/^	void Group::AddNewControlObject(IControl* ctrl) {$/;"	f	class:Engine::Group	typeref:typename:void
+AddNewObject	Group.cpp	/^	void Group::AddNewObject(IObject* obj) {$/;"	f	class:Engine::Group	typeref:typename:void
+AddNewScene	GameEngine.cpp	/^	void GameEngine::AddNewScene(const std::string& name, IScene* scene) {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+AddRefControl	Group.cpp	/^	void Group::AddRefControl(IControl& ctrl) {$/;"	f	class:Engine::Group	typeref:typename:void
+AddRefControlObject	Group.cpp	/^	void Group::AddRefControlObject(IControl& ctrl) {$/;"	f	class:Engine::Group	typeref:typename:void
+AddRefObject	Group.cpp	/^	void Group::AddRefObject(IObject& obj) {$/;"	f	class:Engine::Group	typeref:typename:void
+Allegro5Exception	Allegro5Exception.cpp	/^	Allegro5Exception::Allegro5Exception(char const* const message) noexcept:$/;"	f	class:Engine::Allegro5Exception
+Allegro5Exception	Allegro5Exception.cpp	/^	Allegro5Exception::Allegro5Exception(const std::string& message) noexcept:$/;"	f	class:Engine::Allegro5Exception
+Allegro5Exception	Allegro5Exception.hpp	/^	class Allegro5Exception final : public std::runtime_error {$/;"	c	namespace:Engine
+Anchor	IObject.hpp	/^		Point Anchor;$/;"	m	class:Engine::IObject	typeref:typename:Point
+AudioHelper	AudioHelper.hpp	/^class AudioHelper {$/;"	c
+BGMSlideOnValueChanged	StageSelectScene.cpp	/^void StageSelectScene::BGMSlideOnValueChanged(float value) {$/;"	f	class:StageSelectScene	typeref:typename:void
+BGMVolume	AudioHelper.cpp	/^float AudioHelper::BGMVolume = 1.0;$/;"	m	class:AudioHelper	typeref:typename:float
+BGMVolume	AudioHelper.hpp	/^	static float BGMVolume;$/;"	m	class:AudioHelper	typeref:typename:float
+BULLET_HPP	Bullet.hpp	/^#define BULLET_HPP$/;"	d
+BackOnClick	LoseScene.cpp	/^void LoseScene::BackOnClick(int stage) {$/;"	f	class:LoseScene	typeref:typename:void
+BackOnClick	StartScene.cpp	/^void StartScene::BackOnClick(int stage) {$/;"	f	class:StartScene	typeref:typename:void
+BackOnClick	WinScene.cpp	/^void WinScene::BackOnClick(int stage) {$/;"	f	class:WinScene	typeref:typename:void
+Bar	Slider.hpp	/^	Image Bar;$/;"	m	class:Slider	typeref:typename:Image
+Base	TurretButton.hpp	/^	Engine::Sprite Base;$/;"	m	class:TurretButton	typeref:typename:Engine::Sprite
+BlockSize	PlayScene.cpp	/^const int PlayScene::BlockSize = 64;$/;"	m	class:PlayScene	typeref:typename:const int
+BlockSize	PlayScene.hpp	/^	static const int BlockSize;$/;"	m	class:PlayScene	typeref:typename:const int
+Bullet	Bullet.cpp	/^Bullet::Bullet(std::string img, float speed, float damage, Engine::Point position, Engine::Point/;"	f	class:Bullet
+Bullet	Bullet.hpp	/^class Bullet : public Engine::Sprite {$/;"	c
+BulletGroup	PlayScene.hpp	/^	Group* BulletGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+CC	Makefile	/^CC = g++$/;"	m
+COLLIDER_HPP	Collider.hpp	/^#define COLLIDER_HPP$/;"	d
+CalculateBFSDistance	PlayScene.cpp	/^std::vector<std::vector<int>> PlayScene::CalculateBFSDistance() {$/;"	f	class:PlayScene	typeref:typename:std::vector<std::vector<int>>
+ChangeScene	GameEngine.cpp	/^	void GameEngine::ChangeScene(const std::string& name) {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+CheckSpaceValid	PlayScene.cpp	/^bool PlayScene::CheckSpaceValid(int x, int y) {$/;"	f	class:PlayScene	typeref:typename:bool
+Clear	Group.cpp	/^	void Group::Clear() {$/;"	f	class:Engine::Group	typeref:typename:void
+Collider	Collider.hpp	/^	struct Collider final {$/;"	s	namespace:Engine
+CollisionRadius	Sprite.hpp	/^		float CollisionRadius = 0;$/;"	m	class:Engine::Sprite	typeref:typename:float
+Color	Label.hpp	/^		ALLEGRO_COLOR Color;$/;"	m	class:Engine::Label	typeref:typename:ALLEGRO_COLOR
+ConstructUI	PlayScene.cpp	/^void PlayScene::ConstructUI() {$/;"	f	class:PlayScene	typeref:typename:void
+CreateBullet	LaserTurret.cpp	/^void LaserTurret::CreateBullet() {$/;"	f	class:LaserTurret	typeref:typename:void
+CreateBullet	MachineGunTurret.cpp	/^void MachineGunTurret::CreateBullet() {$/;"	f	class:MachineGunTurret	typeref:typename:void
+CreateBullet	MissileTurret.cpp	/^void MissileTurret::CreateBullet() {$/;"	f	class:MissileTurret	typeref:typename:void
+CreateBullet	MyTurret.cpp	/^void MyTurret::CreateBullet() {$/;"	f	class:MyTurret	typeref:typename:void
+DEBUG	LOG.hpp	/^		DEBUG,$/;"	e	enum:Engine::LogType
+DIRTYEFFECT_HPP	DirtyEffect.hpp	/^#define DIRTYEFFECT_HPP$/;"	d
+DebugIndicatorGroup	PlayScene.hpp	/^	Group* DebugIndicatorGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+DebugMode	PlayScene.cpp	/^bool PlayScene::DebugMode = false;$/;"	m	class:PlayScene	typeref:typename:bool
+DebugMode	PlayScene.hpp	/^	static bool DebugMode;$/;"	m	class:PlayScene	typeref:typename:bool
+DirtyEffect	DirtyEffect.cpp	/^DirtyEffect::DirtyEffect(std::string img, float timeSpan, float x, float y) : Sprite(img, x, y),/;"	f	class:DirtyEffect
+DirtyEffect	DirtyEffect.hpp	/^class DirtyEffect : public Engine::Sprite {$/;"	c
+Dot	Point.cpp	/^	float Point::Dot(const Point& rhs) const {$/;"	f	class:Engine::Point	typeref:typename:float
+Down	Slider.hpp	/^	bool Down = false;$/;"	m	class:Slider	typeref:typename:bool
+Draw	Enemy.cpp	/^void Enemy::Draw() const {$/;"	f	class:Enemy	typeref:typename:void
+Draw	Group.cpp	/^	void Group::Draw() const {$/;"	f	class:Engine::Group	typeref:typename:void
+Draw	IObject.cpp	/^	void IObject::Draw() const {}$/;"	f	class:Engine::IObject	typeref:typename:void
+Draw	IScene.cpp	/^	void IScene::Draw() const {$/;"	f	class:Engine::IScene	typeref:typename:void
+Draw	Image.cpp	/^	void Image::Draw() const {$/;"	f	class:Engine::Image	typeref:typename:void
+Draw	Label.cpp	/^	void Label::Draw() const {$/;"	f	class:Engine::Label	typeref:typename:void
+Draw	Plane.cpp	/^void Plane::Draw() const {$/;"	f	class:Plane	typeref:typename:void
+Draw	PlayScene.cpp	/^void PlayScene::Draw() const {$/;"	f	class:PlayScene	typeref:typename:void
+Draw	Slider.cpp	/^void Slider::Draw() const {$/;"	f	class:Slider	typeref:typename:void
+Draw	Sprite.cpp	/^	void Sprite::Draw() const {$/;"	f	class:Engine::Sprite	typeref:typename:void
+Draw	TankEnemy.cpp	/^void TankEnemy::Draw() const {$/;"	f	class:TankEnemy	typeref:typename:void
+Draw	Turret.cpp	/^void Turret::Draw() const {$/;"	f	class:Turret	typeref:typename:void
+Draw	TurretButton.cpp	/^void TurretButton::Draw() const {$/;"	f	class:TurretButton	typeref:typename:void
+ENEMY_HPP	Enemy.hpp	/^#define ENEMY_HPP$/;"	d
+ERROR	LOG.hpp	/^		ERROR$/;"	e	enum:Engine::LogType
+EXPLOSIONEFFECT_HPP	ExplosionEffect.hpp	/^#define EXPLOSIONEFFECT_HPP$/;"	d
+EarnMoney	PlayScene.cpp	/^void PlayScene::EarnMoney(int money) {$/;"	f	class:PlayScene	typeref:typename:void
+EffectGroup	PlayScene.hpp	/^	Group* EffectGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+Enabled	ImageButton.hpp	/^		bool Enabled = true;$/;"	m	class:Engine::ImageButton	typeref:typename:bool
+Enabled	LOG.cpp	/^	bool LOG::Enabled = false;$/;"	m	class:Engine::LOG	typeref:typename:bool
+Enabled	LOG.hpp	/^		static bool Enabled;$/;"	m	class:Engine::LOG	typeref:typename:bool
+Enabled	Turret.hpp	/^    bool Enabled = true;$/;"	m	class:Turret	typeref:typename:bool
+End1	Slider.hpp	/^	Image End1;$/;"	m	class:Slider	typeref:typename:Image
+End2	Slider.hpp	/^	Image End2;$/;"	m	class:Slider	typeref:typename:Image
+EndGridPoint	PlayScene.cpp	/^const Engine::Point PlayScene::EndGridPoint = Engine::Point(MapWidth, MapHeight - 1);$/;"	m	class:PlayScene	typeref:typename:const Engine::Point
+EndGridPoint	PlayScene.hpp	/^	static const Engine::Point EndGridPoint;$/;"	m	class:PlayScene	typeref:typename:const Engine::Point
+Enemy	Enemy.cpp	/^Enemy::Enemy(std::string img, float x, float y, float radius, float speed, float hp, int money) /;"	f	class:Enemy
+Enemy	Enemy.hpp	/^class Enemy : public Engine::Sprite {$/;"	c
+EnemyGroup	PlayScene.hpp	/^	Group* EnemyGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+Engine	Allegro5Exception.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Allegro5Exception.hpp	/^namespace Engine {$/;"	n
+Engine	Bullet.hpp	/^namespace Engine {$/;"	n
+Engine	Collider.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Collider.hpp	/^namespace Engine {$/;"	n
+Engine	FireBullet.hpp	/^namespace Engine {$/;"	n
+Engine	GameEngine.cpp	/^namespace Engine {$/;"	n	file:
+Engine	GameEngine.hpp	/^namespace Engine {$/;"	n
+Engine	Group.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Group.hpp	/^namespace Engine {$/;"	n
+Engine	IControl.cpp	/^namespace Engine {$/;"	n	file:
+Engine	IControl.hpp	/^namespace Engine {$/;"	n
+Engine	IObject.cpp	/^namespace Engine {$/;"	n	file:
+Engine	IObject.hpp	/^namespace Engine {$/;"	n
+Engine	IScene.cpp	/^namespace Engine {$/;"	n	file:
+Engine	IScene.hpp	/^namespace Engine {$/;"	n
+Engine	Image.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Image.hpp	/^namespace Engine {$/;"	n
+Engine	ImageButton.cpp	/^namespace Engine {$/;"	n	file:
+Engine	ImageButton.hpp	/^namespace Engine {$/;"	n
+Engine	LOG.cpp	/^namespace Engine {$/;"	n	file:
+Engine	LOG.hpp	/^namespace Engine {$/;"	n
+Engine	Label.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Label.hpp	/^namespace Engine {$/;"	n
+Engine	LaserBullet.hpp	/^namespace Engine {$/;"	n
+Engine	MissileBullet.hpp	/^namespace Engine {$/;"	n
+Engine	MyNewBullet.hpp	/^namespace Engine {$/;"	n
+Engine	PlayScene.hpp	/^namespace Engine {$/;"	n
+Engine	Point.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Point.hpp	/^namespace Engine {$/;"	n
+Engine	Resources.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Resources.hpp	/^namespace Engine {$/;"	n
+Engine	Sprite.cpp	/^namespace Engine {$/;"	n	file:
+Engine	Sprite.hpp	/^namespace Engine {$/;"	n
+ExplosionEffect	ExplosionEffect.cpp	/^ExplosionEffect::ExplosionEffect(float x, float y) : Sprite("play\/explosion-1.png", x, y), time/;"	f	class:ExplosionEffect
+ExplosionEffect	ExplosionEffect.hpp	/^class ExplosionEffect : public Engine::Sprite {$/;"	c
+FIREBULLET_HPP	FireBullet.hpp	/^#define FIREBULLET_HPP$/;"	d
+FilePath	LOG.cpp	/^	const char* LOG::FilePath = "log.txt";$/;"	m	class:Engine::LOG	typeref:typename:const char *
+FilePath	LOG.hpp	/^		static const char* FilePath;$/;"	m	class:Engine::LOG	typeref:typename:const char *
+FireBullet	FireBullet.cpp	/^FireBullet::FireBullet(Engine::Point position, Engine::Point forwardDirection, float rotation, T/;"	f	class:FireBullet
+FireBullet	FireBullet.hpp	/^class FireBullet : public Bullet {$/;"	c
+GAMEENGINE_HPP	GameEngine.hpp	/^#define GAMEENGINE_HPP$/;"	d
+GROUP_HPP	Group.hpp	/^#define GROUP_HPP$/;"	d
+GameEngine	GameEngine.hpp	/^	class GameEngine final {$/;"	c	namespace:Engine
+GetActiveScene	GameEngine.cpp	/^	IScene* GameEngine::GetActiveScene() const {$/;"	f	class:Engine::GameEngine	typeref:typename:IScene *
+GetBitmap	Resources.cpp	/^	std::shared_ptr<ALLEGRO_BITMAP> Resources::GetBitmap(std::string name) {$/;"	f	class:Engine::Resources	typeref:typename:std::shared_ptr<ALLEGRO_BITMAP>
+GetBitmap	Resources.cpp	/^	std::shared_ptr<ALLEGRO_BITMAP> Resources::GetBitmap(std::string name, int width, int height) {$/;"	f	class:Engine::Resources	typeref:typename:std::shared_ptr<ALLEGRO_BITMAP>
+GetBitmapHeight	Image.cpp	/^	int Image::GetBitmapHeight() const {$/;"	f	class:Engine::Image	typeref:typename:int
+GetBitmapWidth	Image.cpp	/^	int Image::GetBitmapWidth() const {$/;"	f	class:Engine::Image	typeref:typename:int
+GetClientSize	PlayScene.cpp	/^Engine::Point PlayScene::GetClientSize() {$/;"	f	class:PlayScene	typeref:typename:Engine::Point
+GetControls	Group.cpp	/^	std::list<IControl*> Group::GetControls() {$/;"	f	class:Engine::Group	typeref:typename:std::list<IControl * >
+GetFont	Resources.cpp	/^	std::shared_ptr<ALLEGRO_FONT> Resources::GetFont(std::string name, int fontSize) {$/;"	f	class:Engine::Resources	typeref:typename:std::shared_ptr<ALLEGRO_FONT>
+GetInstance	GameEngine.cpp	/^	GameEngine& GameEngine::GetInstance() {$/;"	f	class:Engine::GameEngine	typeref:typename:GameEngine &
+GetInstance	Resources.cpp	/^	Resources& Resources::GetInstance() {$/;"	f	class:Engine::Resources	typeref:typename:Resources &
+GetMoney	PlayScene.cpp	/^int PlayScene::GetMoney() const {$/;"	f	class:PlayScene	typeref:typename:int
+GetMousePosition	GameEngine.cpp	/^	Point GameEngine::GetMousePosition() const {$/;"	f	class:Engine::GameEngine	typeref:typename:Point
+GetObjectIterator	IObject.cpp	/^	std::list<std::pair<bool, IObject*>>::iterator IObject::GetObjectIterator() const {$/;"	f	class:Engine::IObject	typeref:typename:std::list<std::pair<bool,IObject * >>::iterator
+GetObjects	Group.cpp	/^	std::list<IObject*> Group::GetObjects() {$/;"	f	class:Engine::Group	typeref:typename:std::list<IObject * >
+GetPrice	Turret.cpp	/^int Turret::GetPrice() const {$/;"	f	class:Turret	typeref:typename:int
+GetSample	Resources.cpp	/^	std::shared_ptr<ALLEGRO_SAMPLE> Resources::GetSample(std::string name) {$/;"	f	class:Engine::Resources	typeref:typename:std::shared_ptr<ALLEGRO_SAMPLE>
+GetScene	GameEngine.cpp	/^	IScene* GameEngine::GetScene(const std::string& name) {$/;"	f	class:Engine::GameEngine	typeref:typename:IScene *
+GetScreenHeight	GameEngine.cpp	/^	int GameEngine::GetScreenHeight() const {$/;"	f	class:Engine::GameEngine	typeref:typename:int
+GetScreenSize	GameEngine.cpp	/^	Point GameEngine::GetScreenSize() const {$/;"	f	class:Engine::GameEngine	typeref:typename:Point
+GetScreenWidth	GameEngine.cpp	/^	int GameEngine::GetScreenWidth() const {$/;"	f	class:Engine::GameEngine	typeref:typename:int
+GetTextHeight	Label.cpp	/^	int Label::GetTextHeight() const {$/;"	f	class:Engine::Label	typeref:typename:int
+GetTextWidth	Label.cpp	/^	int Label::GetTextWidth() const {$/;"	f	class:Engine::Label	typeref:typename:int
+GroundEffectGroup	PlayScene.hpp	/^	Group* GroundEffectGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+Group	Group.hpp	/^	class Group: public IObject, public IControl {$/;"	c	namespace:Engine
+Hit	Enemy.cpp	/^void Enemy::Hit(float damage) {$/;"	f	class:Enemy	typeref:typename:void
+Hit	PlayScene.cpp	/^void PlayScene::Hit() {$/;"	f	class:PlayScene	typeref:typename:void
+ICONTROL_HPP	IControl.hpp	/^#define ICONTROL_HPP$/;"	d
+IControl	IControl.hpp	/^	class IControl {$/;"	c	namespace:Engine
+IMAGEBUTTON_HPP	ImageButton.hpp	/^#define IMAGEBUTTON_HPP$/;"	d
+IMAGE_HPP	Image.hpp	/^#define IMAGE_HPP$/;"	d
+INFO	LOG.hpp	/^		INFO,$/;"	e	enum:Engine::LogType
+IOBJECT_HPP	IObject.hpp	/^#define IOBJECT_HPP$/;"	d
+IObject	IObject.cpp	/^	IObject::IObject(float x, float y, float w, float h, float anchorX, float anchorY) :$/;"	f	class:Engine::IObject
+IObject	IObject.hpp	/^	class IObject {$/;"	c	namespace:Engine
+ISCENE_HPP	IScene.hpp	/^#define ISCENE_HPP$/;"	d
+IScene	IScene.hpp	/^	class IScene: public Group {$/;"	c	namespace:Engine
+Image	Image.cpp	/^	Image::Image(std::string img, float x, float y, float w, float h, float anchorX, float anchorY)/;"	f	class:Engine::Image
+Image	Image.hpp	/^	class Image : public IObject {$/;"	c	namespace:Engine
+ImageButton	ImageButton.cpp	/^	ImageButton::ImageButton(std::string img, std::string imgIn, float x, float y, float w, float h/;"	f	class:Engine::ImageButton
+ImageButton	ImageButton.hpp	/^	class ImageButton: public Image, public IControl {$/;"	c	namespace:Engine
+Initialize	LoseScene.cpp	/^void LoseScene::Initialize() {$/;"	f	class:LoseScene	typeref:typename:void
+Initialize	PlayScene.cpp	/^void PlayScene::Initialize() {$/;"	f	class:PlayScene	typeref:typename:void
+Initialize	StageSelectScene.cpp	/^void StageSelectScene::Initialize() {$/;"	f	class:StageSelectScene	typeref:typename:void
+Initialize	StartScene.cpp	/^void StartScene::Initialize() {$/;"	f	class:StartScene	typeref:typename:void
+Initialize	WinScene.cpp	/^void WinScene::Initialize() {$/;"	f	class:WinScene	typeref:typename:void
+InsertNewObject	Group.cpp	/^	void Group::InsertNewObject(IObject* obj, std::list<std::pair<bool, IObject*>>::iterator it) {$/;"	f	class:Engine::Group	typeref:typename:void
+InsertRefObject	Group.cpp	/^	void Group::InsertRefObject(IObject& obj, std::list<std::pair<bool, IObject*>>::iterator it) {$/;"	f	class:Engine::Group	typeref:typename:void
+IsCircleOverlap	Collider.cpp	/^	bool Collider::IsCircleOverlap(Point c1, float r1, Point c2, float r2) {$/;"	f	class:Engine::Collider	typeref:typename:bool
+IsKeyDown	GameEngine.cpp	/^	bool GameEngine::IsKeyDown(int keyCode) const {$/;"	f	class:Engine::GameEngine	typeref:typename:bool
+IsPointInBitmap	Collider.cpp	/^	bool Collider::IsPointInBitmap(Point pnt, const std::shared_ptr<ALLEGRO_BITMAP>& bmp) {$/;"	f	class:Engine::Collider	typeref:typename:bool
+IsPointInRect	Collider.cpp	/^	bool Collider::IsPointInRect(Point pnt, Point rectPos, Point rectSize) {$/;"	f	class:Engine::Collider	typeref:typename:bool
+IsRectOverlap	Collider.cpp	/^	bool Collider::IsRectOverlap(Point r1Min, Point r1Max, Point r2Min, Point r2Max) {$/;"	f	class:Engine::Collider	typeref:typename:bool
+LABEL_HPP	Label.hpp	/^#define LABEL_HPP$/;"	d
+LASERBULLET_HPP	LaserBullet.hpp	/^#define LASERBULLET_HPP$/;"	d
+LASERTURRET_HPP	LaserTurret.hpp	/^#define LASERTURRET_HPP$/;"	d
+LIB	Makefile	/^LIB = -I..$/;"	m
+LOG	LOG.cpp	/^	LOG::LOG(LogType type) {$/;"	f	class:Engine::LOG
+LOG	LOG.hpp	/^	class LOG final {$/;"	c	namespace:Engine
+LOG_HPP	LOG.hpp	/^#define LOG_HPP$/;"	d
+LOSESCENE_HPP	LoseScene.hpp	/^#define LOSESCENE_HPP$/;"	d
+Label	Label.cpp	/^	Label::Label(const std::string& text, const std::string& font, int fontSize, float x, float y, /;"	f	class:Engine::Label
+Label	Label.hpp	/^	class Label : public IObject {$/;"	c	namespace:Engine
+LaserBullet	LaserBullet.cpp	/^LaserBullet::LaserBullet(Engine::Point position, Engine::Point forwardDirection, float rotation,/;"	f	class:LaserBullet
+LaserBullet	LaserBullet.hpp	/^class LaserBullet : public Bullet {$/;"	c
+LaserTurret	LaserTurret.cpp	/^LaserTurret::LaserTurret(float x, float y) :$/;"	f	class:LaserTurret
+LaserTurret	LaserTurret.hpp	/^class LaserTurret: public Turret {$/;"	c
+LogType	LOG.hpp	/^	enum LogType {$/;"	g	namespace:Engine
+LogVerbose	LOG.cpp	/^	bool LOG::LogVerbose = false;$/;"	m	class:Engine::LOG	typeref:typename:bool
+LogVerbose	LOG.hpp	/^		static bool LogVerbose;$/;"	m	class:Engine::LOG	typeref:typename:bool
+LoseScene	LoseScene.hpp	/^class LoseScene final : public Engine::IScene {$/;"	c
+MACHINEGUNTURRET_HPP	MachineGunTurret.hpp	/^#define MACHINEGUNTURRET_HPP$/;"	d
+MISSILEBULLET_HPP	MissileBullet.hpp	/^#define MISSILEBULLET_HPP$/;"	d
+MISSILETURRET_HPP	MissileTurret.hpp	/^#define MISSILETURRET_HPP$/;"	d
+MYNEWBULLET_HPP	MyNewBullet.hpp	/^#define MYNEWBULLET_HPP$/;"	d
+MYSOLDIER_HPP	MySoldier.hpp	/^#define MYSOLDIER_HPP$/;"	d
+MYTURRET_HPP	MyTurret.hpp	/^#define MYTURRET_HPP$/;"	d
+MachineGunTurret	MachineGunTurret.cpp	/^MachineGunTurret::MachineGunTurret(float x, float y) :$/;"	f	class:MachineGunTurret
+MachineGunTurret	MachineGunTurret.hpp	/^class MachineGunTurret: public Turret {$/;"	c
+Magnitude	Point.cpp	/^	float Point::Magnitude() const {$/;"	f	class:Engine::Point	typeref:typename:float
+MagnitudeSquared	Point.cpp	/^	float Point::MagnitudeSquared() const {$/;"	f	class:Engine::Point	typeref:typename:float
+MapHeight	PlayScene.cpp	/^const int PlayScene::MapWidth = 16, PlayScene::MapHeight = 9;$/;"	m	class:PlayScene	typeref:typename:const int
+MapHeight	PlayScene.hpp	/^	static const int MapWidth, MapHeight;$/;"	m	class:PlayScene	typeref:typename:const int
+MapId	PlayScene.hpp	/^	int MapId;$/;"	m	class:PlayScene	typeref:typename:int
+MapWidth	PlayScene.cpp	/^const int PlayScene::MapWidth = 16, PlayScene::MapHeight = 9;$/;"	m	class:PlayScene	typeref:typename:const int
+MapWidth	PlayScene.hpp	/^	static const int MapWidth, MapHeight;$/;"	m	class:PlayScene	typeref:typename:const int
+Max	Slider.hpp	/^	const float Max = 1;$/;"	m	class:Slider	typeref:typename:const float
+Min	Slider.hpp	/^	const float Min = 0;$/;"	m	class:Slider	typeref:typename:const float
+MissileBullet	MissileBullet.cpp	/^MissileBullet::MissileBullet(Engine::Point position, Engine::Point forwardDirection, float rotat/;"	f	class:MissileBullet
+MissileBullet	MissileBullet.hpp	/^class MissileBullet : public Bullet {$/;"	c
+MissileTurret	MissileTurret.cpp	/^MissileTurret::MissileTurret(float x, float y) :$/;"	f	class:MissileTurret
+MissileTurret	MissileTurret.hpp	/^class MissileTurret: public Turret {$/;"	c
+MyNewBullet	MyNewBullet.cpp	/^MyNewBullet::MyNewBullet(Engine::Point position, Engine::Point forwardDirection, float rotation,/;"	f	class:MyNewBullet
+MyNewBullet	MyNewBullet.hpp	/^class MyNewBullet : public Bullet {$/;"	c
+MySoldier	MySoldier.cpp	/^MySoldier::MySoldier(int x, int y) : Enemy("play\/enemy-10.png", x, y, 10, 50, 50, 100) {$/;"	f	class:MySoldier
+MySoldier	MySoldier.hpp	/^class MySoldier : public Enemy {$/;"	c
+MyTurret	MyTurret.cpp	/^MyTurret::MyTurret(float x, float y) :$/;"	f	class:MyTurret
+MyTurret	MyTurret.hpp	/^class MyTurret: public Turret {$/;"	c
+Normalize	Point.cpp	/^	Point Point::Normalize() const {$/;"	f	class:Engine::Point	typeref:typename:Point
+OBJFILE	Makefile	/^OBJFILE = Allegro5Exception.o AudioHelper.o Bullet.o Collider.o DirtyEffect.o Enemy.o ExplosionE/;"	m
+OnClickCallback	ImageButton.hpp	/^		std::function<void()> OnClickCallback;$/;"	m	class:Engine::ImageButton	typeref:typename:std::function<void ()>
+OnExplode	Bullet.cpp	/^void Bullet::OnExplode(Enemy* enemy) {$/;"	f	class:Bullet	typeref:typename:void
+OnExplode	Enemy.cpp	/^void Enemy::OnExplode() {$/;"	f	class:Enemy	typeref:typename:void
+OnExplode	FireBullet.cpp	/^void FireBullet::OnExplode(Enemy* enemy) {$/;"	f	class:FireBullet	typeref:typename:void
+OnExplode	LaserBullet.cpp	/^void LaserBullet::OnExplode(Enemy* enemy) {$/;"	f	class:LaserBullet	typeref:typename:void
+OnExplode	MissileBullet.cpp	/^void MissileBullet::OnExplode(Enemy* enemy) {$/;"	f	class:MissileBullet	typeref:typename:void
+OnExplode	MyNewBullet.cpp	/^void MyNewBullet::OnExplode(Enemy* enemy) {$/;"	f	class:MyNewBullet	typeref:typename:void
+OnKeyDown	Group.cpp	/^	void Group::OnKeyDown(int keyCode) {$/;"	f	class:Engine::Group	typeref:typename:void
+OnKeyDown	IControl.cpp	/^	void IControl::OnKeyDown(int keyCode) {}$/;"	f	class:Engine::IControl	typeref:typename:void
+OnKeyDown	PlayScene.cpp	/^void PlayScene::OnKeyDown(int keyCode) {$/;"	f	class:PlayScene	typeref:typename:void
+OnKeyUp	Group.cpp	/^	void Group::OnKeyUp(int keyCode) {$/;"	f	class:Engine::Group	typeref:typename:void
+OnKeyUp	IControl.cpp	/^	void IControl::OnKeyUp(int keyCode) {}$/;"	f	class:Engine::IControl	typeref:typename:void
+OnMouseDown	Group.cpp	/^	void Group::OnMouseDown(int button, int mx, int my) {$/;"	f	class:Engine::Group	typeref:typename:void
+OnMouseDown	IControl.cpp	/^	void IControl::OnMouseDown(int button, int mx, int my) {}$/;"	f	class:Engine::IControl	typeref:typename:void
+OnMouseDown	ImageButton.cpp	/^	void ImageButton::OnMouseDown(int button, int mx, int my) {$/;"	f	class:Engine::ImageButton	typeref:typename:void
+OnMouseDown	PlayScene.cpp	/^void PlayScene::OnMouseDown(int button, int mx, int my) {$/;"	f	class:PlayScene	typeref:typename:void
+OnMouseDown	Slider.cpp	/^void Slider::OnMouseDown(int button, int mx, int my) {$/;"	f	class:Slider	typeref:typename:void
+OnMouseMove	Group.cpp	/^	void Group::OnMouseMove(int mx, int my) {$/;"	f	class:Engine::Group	typeref:typename:void
+OnMouseMove	IControl.cpp	/^	void IControl::OnMouseMove(int mx, int my) {}$/;"	f	class:Engine::IControl	typeref:typename:void
+OnMouseMove	ImageButton.cpp	/^	void ImageButton::OnMouseMove(int mx, int my) {$/;"	f	class:Engine::ImageButton	typeref:typename:void
+OnMouseMove	PlayScene.cpp	/^void PlayScene::OnMouseMove(int mx, int my) {$/;"	f	class:PlayScene	typeref:typename:void
+OnMouseMove	Slider.cpp	/^void Slider::OnMouseMove(int mx, int my) {$/;"	f	class:Slider	typeref:typename:void
+OnMouseScroll	Group.cpp	/^	void Group::OnMouseScroll(int mx, int my, int delta) {$/;"	f	class:Engine::Group	typeref:typename:void
+OnMouseScroll	IControl.cpp	/^	void IControl::OnMouseScroll(int mx, int my, int delta) {}$/;"	f	class:Engine::IControl	typeref:typename:void
+OnMouseUp	Group.cpp	/^	void Group::OnMouseUp(int button, int mx, int my) {$/;"	f	class:Engine::Group	typeref:typename:void
+OnMouseUp	IControl.cpp	/^	void IControl::OnMouseUp(int button, int mx, int my) {}$/;"	f	class:Engine::IControl	typeref:typename:void
+OnMouseUp	PlayScene.cpp	/^void PlayScene::OnMouseUp(int button, int mx, int my) {$/;"	f	class:PlayScene	typeref:typename:void
+OnMouseUp	Slider.cpp	/^void Slider::OnMouseUp(int button, int mx, int my) {$/;"	f	class:Slider	typeref:typename:void
+OnValueChangedCallback	Slider.hpp	/^	std::function<void(float value)> OnValueChangedCallback;$/;"	m	class:Slider	typeref:typename:std::function<void (float value)>
+PLANEENEMY_HPP	PlaneEnemy.hpp	/^#define PLANEENEMY_HPP$/;"	d
+PLANE_HPP	Plane.hpp	/^#define PLANE_HPP$/;"	d
+PLAYSCENE_HPP	PlayScene.hpp	/^#define PLAYSCENE_HPP$/;"	d
+POINT_HPP	Point.hpp	/^#define POINT_HPP$/;"	d
+Plane	Plane.cpp	/^Plane::Plane() : Sprite("play\/plane.png", -100, Engine::GameEngine::GetInstance().GetScreenHeig/;"	f	class:Plane
+Plane	Plane.hpp	/^class Plane : public Engine::Sprite {$/;"	c
+PlaneEnemy	PlaneEnemy.cpp	/^PlaneEnemy::PlaneEnemy(int x, int y) : Enemy("play\/enemy-2.png", x, y, 16, 100, 10, 10) {$/;"	f	class:PlaneEnemy
+PlaneEnemy	PlaneEnemy.hpp	/^class PlaneEnemy : public Enemy {$/;"	c
+PlayAudio	AudioHelper.cpp	/^ALLEGRO_SAMPLE_ID AudioHelper::PlayAudio(const std::string& audio) {$/;"	f	class:AudioHelper	typeref:typename:ALLEGRO_SAMPLE_ID
+PlayBGM	AudioHelper.cpp	/^ALLEGRO_SAMPLE_ID AudioHelper::PlayBGM(const std::string& audio) {$/;"	f	class:AudioHelper	typeref:typename:ALLEGRO_SAMPLE_ID
+PlayOnClick	StageSelectScene.cpp	/^void StageSelectScene::PlayOnClick(int stage) {$/;"	f	class:StageSelectScene	typeref:typename:void
+PlayScene	PlayScene.hpp	/^class PlayScene final : public Engine::IScene {$/;"	c
+Point	Point.cpp	/^	Point::Point() : Point(0, 0) {}$/;"	f	class:Engine::Point
+Point	Point.cpp	/^	Point::Point(float x, float y) : x(x), y(y) {}$/;"	f	class:Engine::Point
+Point	Point.hpp	/^	struct Point {$/;"	s	namespace:Engine
+Position	IObject.hpp	/^		Point Position;$/;"	m	class:Engine::IObject	typeref:typename:Point
+Preview	Turret.hpp	/^    bool Preview = false;$/;"	m	class:Turret	typeref:typename:bool
+Price	LaserTurret.cpp	/^const int LaserTurret::Price = 200;$/;"	m	class:LaserTurret	typeref:typename:const int
+Price	LaserTurret.hpp	/^	static const int Price;$/;"	m	class:LaserTurret	typeref:typename:const int
+Price	MachineGunTurret.cpp	/^const int MachineGunTurret::Price = 50;$/;"	m	class:MachineGunTurret	typeref:typename:const int
+Price	MachineGunTurret.hpp	/^	static const int Price;$/;"	m	class:MachineGunTurret	typeref:typename:const int
+Price	MissileTurret.cpp	/^const int MissileTurret::Price = 300;$/;"	m	class:MissileTurret	typeref:typename:const int
+Price	MissileTurret.hpp	/^	static const int Price;$/;"	m	class:MissileTurret	typeref:typename:const int
+Price	MyTurret.cpp	/^const int MyTurret::Price = 500;$/;"	m	class:MyTurret	typeref:typename:const int
+Price	MyTurret.hpp	/^	static const int Price;$/;"	m	class:MyTurret	typeref:typename:const int
+RESOURCES_HPP	Resources.hpp	/^#define RESOURCES_HPP$/;"	d
+ReadEnemyWave	PlayScene.cpp	/^void PlayScene::ReadEnemyWave() {$/;"	f	class:PlayScene	typeref:typename:void
+ReadMap	PlayScene.cpp	/^void PlayScene::ReadMap() {$/;"	f	class:PlayScene	typeref:typename:void
+ReleaseUnused	Resources.cpp	/^	void Resources::ReleaseUnused() {$/;"	f	class:Engine::Resources	typeref:typename:void
+RemoveControl	Group.cpp	/^	void Group::RemoveControl(std::list<std::pair<bool, IControl*>>::iterator it) {$/;"	f	class:Engine::Group	typeref:typename:void
+RemoveControlObject	Group.cpp	/^	void Group::RemoveControlObject(std::list<std::pair<bool, IControl*>>::iterator ctrlIt, std::li/;"	f	class:Engine::Group	typeref:typename:void
+RemoveObject	Group.cpp	/^	void Group::RemoveObject(std::list<std::pair<bool, IObject*>>::iterator it) {$/;"	f	class:Engine::Group	typeref:typename:void
+Resources	Resources.hpp	/^	class Resources final {$/;"	c	namespace:Engine
+Rotation	Sprite.hpp	/^		float Rotation;$/;"	m	class:Engine::Sprite	typeref:typename:float
+SFXSlideOnValueChanged	StageSelectScene.cpp	/^void StageSelectScene::SFXSlideOnValueChanged(float value) {$/;"	f	class:StageSelectScene	typeref:typename:void
+SFXVolume	AudioHelper.cpp	/^float AudioHelper::SFXVolume = 1.0;$/;"	m	class:AudioHelper	typeref:typename:float
+SFXVolume	AudioHelper.hpp	/^	static float SFXVolume;$/;"	m	class:AudioHelper	typeref:typename:float
+SLIDER_HPP	Slider.hpp	/^#define SLIDER_HPP$/;"	d
+SOLDIERENEMY_HPP	SoldierEnemy.hpp	/^#define SOLDIERENEMY_HPP$/;"	d
+SOURCEFILE	Makefile	/^SOURCEFILE = Allegro5Exception.cpp AudioHelper.cpp Bullet.cpp Collider.cpp DirtyEffect.cpp Enemy/;"	m
+SPRITE_HPP	Sprite.hpp	/^#define SPRITE_HPP$/;"	d
+STAGESELECTSCENE_HPP	StageSelectScene.hpp	/^#define STAGESELECTSCENE_HPP$/;"	d
+STARTSCENE_HPP	StartScene.hpp	/^#define STARTSCENE_HPP$/;"	d
+SetConfig	LOG.cpp	/^	void LOG::SetConfig(bool enabled, bool logVerbose, const char* filePath) {$/;"	f	class:Engine::LOG	typeref:typename:void
+SetOnClickCallback	ImageButton.cpp	/^	void ImageButton::SetOnClickCallback(std::function<void(void)> onClickCallback) {$/;"	f	class:Engine::ImageButton	typeref:typename:void
+SetOnValueChangedCallback	Slider.cpp	/^void Slider::SetOnValueChangedCallback(std::function<void(float value)> onValueChangedCallback) /;"	f	class:Slider	typeref:typename:void
+SetValue	Slider.cpp	/^void Slider::SetValue(float value) {$/;"	f	class:Slider	typeref:typename:void
+Size	IObject.hpp	/^		Point Size;$/;"	m	class:Engine::IObject	typeref:typename:Point
+Slider	Slider.cpp	/^Slider::Slider(float x, float y, float w, float h) :$/;"	f	class:Slider
+Slider	Slider.hpp	/^class Slider : public Engine::ImageButton {$/;"	c
+SoldierEnemy	SoldierEnemy.cpp	/^SoldierEnemy::SoldierEnemy(int x, int y) : Enemy("play\/enemy-1.png", x, y, 10, 50, 5, 5) {$/;"	f	class:SoldierEnemy
+SoldierEnemy	SoldierEnemy.hpp	/^class SoldierEnemy : public Enemy {$/;"	c
+SpawnGridPoint	PlayScene.cpp	/^const Engine::Point PlayScene::SpawnGridPoint = Engine::Point(-1, 0);$/;"	m	class:PlayScene	typeref:typename:const Engine::Point
+SpawnGridPoint	PlayScene.hpp	/^	static const Engine::Point SpawnGridPoint;$/;"	m	class:PlayScene	typeref:typename:const Engine::Point
+SpeedMult	PlayScene.hpp	/^	int SpeedMult;$/;"	m	class:PlayScene	typeref:typename:int
+Sprite	Sprite.cpp	/^	Sprite::Sprite(std::string img, float x, float y, float w, float h, float anchorX, float anchor/;"	f	class:Engine::Sprite
+Sprite	Sprite.hpp	/^	class Sprite : public Image {$/;"	c	namespace:Engine
+StageSelectScene	StageSelectScene.hpp	/^class StageSelectScene final : public Engine::IScene {$/;"	c
+Start	GameEngine.cpp	/^	void GameEngine::Start(const std::string& firstSceneName, int fps, int screenW, int screenH,$/;"	f	class:Engine::GameEngine	typeref:typename:void
+StartScene	StartScene.hpp	/^class StartScene final : public Engine::IScene {$/;"	c
+StopBGM	AudioHelper.cpp	/^void AudioHelper::StopBGM(ALLEGRO_SAMPLE_ID sample) {$/;"	f	class:AudioHelper	typeref:typename:void
+TANKENEMY_HPP	TankEnemy.hpp	/^#define TANKENEMY_HPP$/;"	d
+TARGET	Makefile	/^TARGET = game.out$/;"	m
+TILE_DIRT	PlayScene.hpp	/^		TILE_DIRT,$/;"	e	enum:PlayScene::TileType
+TILE_FLOOR	PlayScene.hpp	/^		TILE_FLOOR,$/;"	e	enum:PlayScene::TileType
+TILE_OCCUPIED	PlayScene.hpp	/^		TILE_OCCUPIED,$/;"	e	enum:PlayScene::TileType
+TURRETBUTTON_HPP	TurretButton.hpp	/^#define TURRETBUTTON_HPP$/;"	d
+TURRET_HPP	Turret.hpp	/^#define TURRET_HPP$/;"	d
+TankEnemy	TankEnemy.cpp	/^TankEnemy::TankEnemy(int x, int y) : Enemy("play\/enemy-3.png", x, y, 20, 20, 100, 50),$/;"	f	class:TankEnemy
+TankEnemy	TankEnemy.hpp	/^class TankEnemy : public Enemy {$/;"	c
+Target	Bullet.hpp	/^	Enemy* Target = nullptr;$/;"	m	class:Bullet	typeref:typename:Enemy *
+Target	Turret.hpp	/^    Enemy* Target = nullptr;$/;"	m	class:Turret	typeref:typename:Enemy *
+Terminate	IScene.cpp	/^	void IScene::Terminate() {$/;"	f	class:Engine::IScene	typeref:typename:void
+Text	Label.hpp	/^		std::string Text;$/;"	m	class:Engine::Label	typeref:typename:std::string
+TileMapGroup	PlayScene.hpp	/^	Group* TileMapGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+TileType	PlayScene.hpp	/^	enum TileType {$/;"	g	class:PlayScene
+Tint	Sprite.hpp	/^		ALLEGRO_COLOR Tint;$/;"	m	class:Engine::Sprite	typeref:typename:ALLEGRO_COLOR
+TowerGroup	PlayScene.hpp	/^	Group* TowerGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+Turret	Turret.cpp	/^Turret::Turret(std::string imgBase, std::string imgTurret, float x, float y, float radius, int p/;"	f	class:Turret
+Turret	Turret.hpp	/^class Turret: public Engine::Sprite {$/;"	c
+Turret	TurretButton.hpp	/^	Engine::Sprite Turret;$/;"	m	class:TurretButton	typeref:typename:Engine::Sprite
+TurretButton	TurretButton.cpp	/^TurretButton::TurretButton(std::string img, std::string imgIn, Engine::Sprite Base, Engine::Spri/;"	f	class:TurretButton
+TurretButton	TurretButton.hpp	/^class TurretButton : public Engine::ImageButton {$/;"	c
+UIBtnClicked	PlayScene.cpp	/^void PlayScene::UIBtnClicked(int id) {$/;"	f	class:PlayScene	typeref:typename:void
+UIGroup	PlayScene.hpp	/^	Group* UIGroup;$/;"	m	class:PlayScene	typeref:typename:Group *
+UILives	PlayScene.hpp	/^	Engine::Label* UILives;$/;"	m	class:PlayScene	typeref:typename:Engine::Label *
+UIMoney	PlayScene.hpp	/^	Engine::Label* UIMoney;$/;"	m	class:PlayScene	typeref:typename:Engine::Label *
+Update	Bullet.cpp	/^void Bullet::Update(float deltaTime) {$/;"	f	class:Bullet	typeref:typename:void
+Update	DirtyEffect.cpp	/^void DirtyEffect::Update(float deltaTime) {$/;"	f	class:DirtyEffect	typeref:typename:void
+Update	Enemy.cpp	/^void Enemy::Update(float deltaTime) {$/;"	f	class:Enemy	typeref:typename:void
+Update	ExplosionEffect.cpp	/^void ExplosionEffect::Update(float deltaTime) {$/;"	f	class:ExplosionEffect	typeref:typename:void
+Update	Group.cpp	/^	void Group::Update(float deltaTime) {$/;"	f	class:Engine::Group	typeref:typename:void
+Update	IObject.cpp	/^	void IObject::Update(float deltaTime) {}$/;"	f	class:Engine::IObject	typeref:typename:void
+Update	MissileBullet.cpp	/^void MissileBullet::Update(float deltaTime) {$/;"	f	class:MissileBullet	typeref:typename:void
+Update	Plane.cpp	/^void Plane::Update(float deltaTime) {$/;"	f	class:Plane	typeref:typename:void
+Update	PlayScene.cpp	/^void PlayScene::Update(float deltaTime) {$/;"	f	class:PlayScene	typeref:typename:void
+Update	Sprite.cpp	/^	void Sprite::Update(float deltaTime) {$/;"	f	class:Engine::Sprite	typeref:typename:void
+Update	TankEnemy.cpp	/^void TankEnemy::Update(float deltaTime) {$/;"	f	class:TankEnemy	typeref:typename:void
+Update	Turret.cpp	/^void Turret::Update(float deltaTime) {$/;"	f	class:Turret	typeref:typename:void
+Update	TurretButton.cpp	/^void TurretButton::Update(float deltaTime) {$/;"	f	class:TurretButton	typeref:typename:void
+Update	WinScene.cpp	/^void WinScene::Update(float deltaTime) {$/;"	f	class:WinScene	typeref:typename:void
+UpdatePath	Enemy.cpp	/^void Enemy::UpdatePath(const std::vector<std::vector<int>>& mapDistance) {$/;"	f	class:Enemy	typeref:typename:void
+VERBOSE	LOG.hpp	/^		VERBOSE,$/;"	e	enum:Engine::LogType
+Velocity	Sprite.hpp	/^		Point Velocity;$/;"	m	class:Engine::Sprite	typeref:typename:Point
+Visible	IObject.hpp	/^		bool Visible = true;$/;"	m	class:Engine::IObject	typeref:typename:bool
+WARN	LOG.hpp	/^		WARN,$/;"	e	enum:Engine::LogType
+WINSCENE_HPP	WinScene.hpp	/^#define WINSCENE_HPP$/;"	d
+WinScene	WinScene.hpp	/^class WinScene final : public Engine::IScene {$/;"	c
+activeScene	GameEngine.hpp	/^		IScene* activeScene{};$/;"	m	class:Engine::GameEngine	typeref:typename:IScene *
+addControl	Group.cpp	/^	void Group::addControl(bool shouldDelete, IControl* ctrl) {$/;"	f	class:Engine::Group	typeref:typename:void
+addObject	Group.cpp	/^	void Group::addObject(bool shouldDelete, IObject* obj) {$/;"	f	class:Engine::Group	typeref:typename:void
+all	Makefile	/^all: $/;"	t
+alpha	DirtyEffect.hpp	/^	float alpha;$/;"	m	class:DirtyEffect	typeref:typename:float
+bgmInstance	StageSelectScene.hpp	/^	ALLEGRO_SAMPLE_INSTANCE* bgmInstance;$/;"	m	class:StageSelectScene	typeref:typename:ALLEGRO_SAMPLE_INSTANCE *
+bitmapPathPrefix	Resources.cpp	/^	const std::string Resources::bitmapPathPrefix = "resources\/images\/";$/;"	m	class:Engine::Resources	typeref:typename:const std::string
+bitmapPathPrefix	Resources.hpp	/^		static const std::string bitmapPathPrefix;$/;"	m	class:Engine::Resources	typeref:typename:const std::string
+bitmaps	Resources.hpp	/^		std::unordered_map<std::string, std::shared_ptr<ALLEGRO_BITMAP>> bitmaps;$/;"	m	class:Engine::Resources	typeref:typename:std::unordered_map<std::string,std::shared_ptr<ALLEGRO_BITMAP>>
+bmp	Image.hpp	/^		std::shared_ptr<ALLEGRO_BITMAP> bmp;$/;"	m	class:Engine::Image	typeref:typename:std::shared_ptr<ALLEGRO_BITMAP>
+bmps	ExplosionEffect.hpp	/^	std::vector<std::shared_ptr<ALLEGRO_BITMAP>> bmps;$/;"	m	class:ExplosionEffect	typeref:typename:std::vector<std::shared_ptr<ALLEGRO_BITMAP>>
+bmps	Plane.hpp	/^	std::vector<std::shared_ptr<ALLEGRO_BITMAP>> bmps;$/;"	m	class:Plane	typeref:typename:std::vector<std::shared_ptr<ALLEGRO_BITMAP>>
+canLog	LOG.cpp	/^	bool LOG::canLog() const {$/;"	f	class:Engine::LOG	typeref:typename:bool
+changeScene	GameEngine.cpp	/^	void GameEngine::changeScene(const std::string& name) {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+code	PlayScene.cpp	/^const std::vector<int> PlayScene::code = { ALLEGRO_KEY_UP, ALLEGRO_KEY_UP, ALLEGRO_KEY_DOWN, ALL/;"	m	class:PlayScene	typeref:typename:const std::vector<int>
+code	PlayScene.hpp	/^	static const std::vector<int> code;$/;"	m	class:PlayScene	typeref:typename:const std::vector<int>
+compile	Makefile	/^compile: $/;"	t
+controlIterator	IControl.hpp	/^		std::list<std::pair<bool, IControl*>>::iterator controlIterator{};$/;"	m	class:Engine::IControl	typeref:typename:std::list<std::pair<bool,IControl * >>::iterator
+controls	Group.hpp	/^		std::list<std::pair<bool, IControl*>> controls;$/;"	m	class:Engine::Group	typeref:typename:std::list<std::pair<bool,IControl * >>
+coolDown	Turret.hpp	/^    float coolDown;$/;"	m	class:Turret	typeref:typename:float
+damage	Bullet.hpp	/^	float damage;$/;"	m	class:Bullet	typeref:typename:float
+destroy	GameEngine.cpp	/^	void GameEngine::destroy() {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+directions	PlayScene.cpp	/^const std::vector<Engine::Point> PlayScene::directions = { Engine::Point(-1, 0), Engine::Point(0/;"	m	class:PlayScene	typeref:typename:const std::vector<Engine::Point>
+directions	PlayScene.hpp	/^	static const std::vector<Engine::Point> directions;$/;"	m	class:PlayScene	typeref:typename:const std::vector<Engine::Point>
+display	GameEngine.hpp	/^		ALLEGRO_DISPLAY* display{};$/;"	m	class:Engine::GameEngine	typeref:typename:ALLEGRO_DISPLAY *
+draw	GameEngine.cpp	/^	void GameEngine::draw() const {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+enabled	LOG.hpp	/^		bool enabled;$/;"	m	class:Engine::LOG	typeref:typename:bool
+enemyWaveData	PlayScene.hpp	/^	std::list<std::pair<int, float>> enemyWaveData;$/;"	m	class:PlayScene	typeref:typename:std::list<std::pair<int,float>>
+event_queue	GameEngine.hpp	/^		ALLEGRO_EVENT_QUEUE* event_queue{};$/;"	m	class:Engine::GameEngine	typeref:typename:ALLEGRO_EVENT_QUEUE *
+font	Label.hpp	/^		std::shared_ptr<ALLEGRO_FONT> font;$/;"	m	class:Engine::Label	typeref:typename:std::shared_ptr<ALLEGRO_FONT>
+fontPathPrefix	Resources.cpp	/^	const std::string Resources::fontPathPrefix = "resources\/fonts\/";$/;"	m	class:Engine::Resources	typeref:typename:const std::string
+fontPathPrefix	Resources.hpp	/^		static const std::string fontPathPrefix;$/;"	m	class:Engine::Resources	typeref:typename:const std::string
+fonts	Resources.hpp	/^		std::unordered_map<std::string, std::shared_ptr<ALLEGRO_FONT>> fonts;$/;"	m	class:Engine::Resources	typeref:typename:std::unordered_map<std::string,std::shared_ptr<ALLEGRO_FONT>>
+fps	GameEngine.hpp	/^		int fps{}, screenW{}, screenH{}, reserveSamples{};$/;"	m	class:Engine::GameEngine	typeref:typename:int
+fuck	Makefile	/^fuck:$/;"	t
+getLabel	LOG.cpp	/^	const char* LOG::getLabel(LogType type) {$/;"	f	class:Engine::LOG	typeref:typename:const char *
+getPlayScene	Bullet.cpp	/^PlayScene* Bullet::getPlayScene() {$/;"	f	class:Bullet	typeref:typename:PlayScene *
+getPlayScene	DirtyEffect.cpp	/^PlayScene* DirtyEffect::getPlayScene() {$/;"	f	class:DirtyEffect	typeref:typename:PlayScene *
+getPlayScene	Enemy.cpp	/^PlayScene* Enemy::getPlayScene() {$/;"	f	class:Enemy	typeref:typename:PlayScene *
+getPlayScene	ExplosionEffect.cpp	/^PlayScene* ExplosionEffect::getPlayScene() {$/;"	f	class:ExplosionEffect	typeref:typename:PlayScene *
+getPlayScene	Plane.cpp	/^PlayScene* Plane::getPlayScene() {$/;"	f	class:Plane	typeref:typename:PlayScene *
+getPlayScene	Turret.cpp	/^PlayScene* Turret::getPlayScene() {$/;"	f	class:Turret	typeref:typename:PlayScene *
+getPlayScene	TurretButton.cpp	/^PlayScene* TurretButton::getPlayScene() {$/;"	f	class:TurretButton	typeref:typename:PlayScene *
+head	TankEnemy.hpp	/^	Sprite head;$/;"	m	class:TankEnemy	typeref:typename:Sprite
+hp	Enemy.hpp	/^	float hp;$/;"	m	class:Enemy	typeref:typename:float
+icon	GameEngine.hpp	/^		const char* icon{};$/;"	m	class:Engine::GameEngine	typeref:typename:const char *
+imgBase	Turret.hpp	/^    Sprite imgBase;$/;"	m	class:Turret	typeref:typename:Sprite
+imgIn	ImageButton.hpp	/^		std::shared_ptr<ALLEGRO_BITMAP> imgIn;$/;"	m	class:Engine::ImageButton	typeref:typename:std::shared_ptr<ALLEGRO_BITMAP>
+imgOut	ImageButton.hpp	/^		std::shared_ptr<ALLEGRO_BITMAP> imgOut;$/;"	m	class:Engine::ImageButton	typeref:typename:std::shared_ptr<ALLEGRO_BITMAP>
+imgTarget	PlayScene.hpp	/^	Engine::Image* imgTarget;$/;"	m	class:PlayScene	typeref:typename:Engine::Image *
+initAllegro5	GameEngine.cpp	/^	void GameEngine::initAllegro5() {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+insertObject	Group.cpp	/^	void Group::insertObject(bool shouldDelete, IObject* obj, std::list<std::pair<bool, IObject*>>:/;"	f	class:Engine::Group	typeref:typename:void
+keyStrokes	PlayScene.hpp	/^	std::list<int> keyStrokes;$/;"	m	class:PlayScene	typeref:typename:std::list<int>
+lives	PlayScene.hpp	/^	int lives;$/;"	m	class:PlayScene	typeref:typename:int
+lockedBulletIterator	MissileBullet.hpp	/^	std::list<Bullet*>::iterator lockedBulletIterator;$/;"	m	class:MissileBullet	typeref:typename:std::list<Bullet * >::iterator
+lockedBullets	Enemy.hpp	/^	std::list<Bullet*> lockedBullets;$/;"	m	class:Enemy	typeref:typename:std::list<Bullet * >
+lockedTurretIterator	Turret.hpp	/^    std::list<Turret*>::iterator lockedTurretIterator;$/;"	m	class:Turret	typeref:typename:std::list<Turret * >::iterator
+lockedTurrets	Enemy.hpp	/^	std::list<Turret*> lockedTurrets;$/;"	m	class:Enemy	typeref:typename:std::list<Turret * >
+main	main.cpp	/^int main(int argc, char **argv) {$/;"	f	typeref:typename:int
+mapDistance	PlayScene.hpp	/^	std::vector<std::vector<int>> mapDistance;$/;"	m	class:PlayScene	typeref:typename:std::vector<std::vector<int>>
+mapState	PlayScene.hpp	/^	std::vector<std::vector<TileType>> mapState;$/;"	m	class:PlayScene	typeref:typename:std::vector<std::vector<TileType>>
+maxScale	Plane.hpp	/^	const float maxScale = 8;$/;"	m	class:Plane	typeref:typename:const float
+minScale	Plane.hpp	/^	const float minScale = 1.0f \/ 8;$/;"	m	class:Plane	typeref:typename:const float
+money	Enemy.hpp	/^	int money;$/;"	m	class:Enemy	typeref:typename:int
+money	PlayScene.hpp	/^	int money;$/;"	m	class:PlayScene	typeref:typename:int
+money	TurretButton.hpp	/^	int money;$/;"	m	class:TurretButton	typeref:typename:int
+mouseIn	ImageButton.hpp	/^		bool mouseIn = false;$/;"	m	class:Engine::ImageButton	typeref:typename:bool
+nextScene	GameEngine.hpp	/^		std::string nextScene{};$/;"	m	class:Engine::GameEngine	typeref:typename:std::string
+objectIterator	IObject.hpp	/^		std::list<std::pair<bool, IObject*>>::iterator objectIterator{};$/;"	m	class:Engine::IObject	typeref:typename:std::list<std::pair<bool,IObject * >>::iterator
+objects	Group.hpp	/^		std::list<std::pair<bool, IObject*>> objects;$/;"	m	class:Engine::Group	typeref:typename:std::list<std::pair<bool,IObject * >>
+ofs	LOG.hpp	/^		std::ofstream ofs;$/;"	m	class:Engine::LOG	typeref:typename:std::ofstream
+operator !=	Point.cpp	/^	bool Point::operator!=(const Point& rhs) const {$/;"	f	class:Engine::Point	typeref:typename:bool
+operator *	Point.cpp	/^	Point Point::operator*(const float& rhs) const {$/;"	f	class:Engine::Point	typeref:typename:Point
+operator *	Point.cpp	/^	Point operator*(const float& lhs, const Point& rhs) {$/;"	f	namespace:Engine	typeref:typename:Point
+operator +	Point.cpp	/^	Point Point::operator+(const Point& rhs) const {$/;"	f	class:Engine::Point	typeref:typename:Point
+operator -	Point.cpp	/^	Point Point::operator-(const Point& rhs) const {$/;"	f	class:Engine::Point	typeref:typename:Point
+operator /	Point.cpp	/^	Point Point::operator\/(const float& rhs) const {$/;"	f	class:Engine::Point	typeref:typename:Point
+operator <<	LOG.hpp	/^		LOG& operator<<(const T &msg) {$/;"	f	class:Engine::LOG	typeref:typename:LOG &
+operator ==	Point.cpp	/^	bool Point::operator==(const Point& rhs) const {$/;"	f	class:Engine::Point	typeref:typename:bool
+parent	Bullet.hpp	/^	Turret* parent;$/;"	m	class:Bullet	typeref:typename:Turret *
+path	Enemy.hpp	/^ 	std::vector<Engine::Point> path;$/;"	m	class:Enemy	typeref:typename:std::vector<Engine::Point>
+preview	PlayScene.hpp	/^	Turret* preview;$/;"	m	class:PlayScene	typeref:typename:Turret *
+price	Turret.hpp	/^    int price;$/;"	m	class:Turret	typeref:typename:int
+reload	Turret.hpp	/^    float reload = 0;$/;"	m	class:Turret	typeref:typename:float
+reserveSamples	GameEngine.hpp	/^		int fps{}, screenW{}, screenH{}, reserveSamples{};$/;"	m	class:Engine::GameEngine	typeref:typename:int
+rotateRadian	MissileBullet.hpp	/^	const float rotateRadian = 2 * ALLEGRO_PI;$/;"	m	class:MissileBullet	typeref:typename:const float
+rotateRadian	Turret.hpp	/^    float rotateRadian = 2 * ALLEGRO_PI;$/;"	m	class:Turret	typeref:typename:float
+samplePathPrefix	Resources.cpp	/^	const std::string Resources::samplePathPrefix = "resources\/audios\/";$/;"	m	class:Engine::Resources	typeref:typename:const std::string
+samplePathPrefix	Resources.hpp	/^		static const std::string samplePathPrefix;$/;"	m	class:Engine::Resources	typeref:typename:const std::string
+samples	Resources.hpp	/^		std::unordered_map<std::string, std::shared_ptr<ALLEGRO_SAMPLE>> samples;$/;"	m	class:Engine::Resources	typeref:typename:std::unordered_map<std::string,std::shared_ptr<ALLEGRO_SAMPLE>>
+scale	Plane.hpp	/^	float scale;$/;"	m	class:Plane	typeref:typename:float
+scenes	GameEngine.hpp	/^		std::unordered_map<std::string, IScene*> scenes;$/;"	m	class:Engine::GameEngine	typeref:typename:std::unordered_map<std::string,IScene * >
+screenH	GameEngine.hpp	/^		int fps{}, screenW{}, screenH{}, reserveSamples{};$/;"	m	class:Engine::GameEngine	typeref:typename:int
+screenW	GameEngine.hpp	/^		int fps{}, screenW{}, screenH{}, reserveSamples{};$/;"	m	class:Engine::GameEngine	typeref:typename:int
+shockWaveRadius	Plane.hpp	/^	const float shockWaveRadius = 180;$/;"	m	class:Plane	typeref:typename:const float
+shockwave	Plane.hpp	/^	std::shared_ptr<ALLEGRO_BITMAP> shockwave;$/;"	m	class:Plane	typeref:typename:std::shared_ptr<ALLEGRO_BITMAP>
+speed	Bullet.hpp	/^	float speed;$/;"	m	class:Bullet	typeref:typename:float
+speed	Enemy.hpp	/^	float speed;$/;"	m	class:Enemy	typeref:typename:float
+stage	Plane.hpp	/^	int stage;$/;"	m	class:Plane	typeref:typename:int
+startEventLoop	GameEngine.cpp	/^	void GameEngine::startEventLoop() {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+targetRotation	TankEnemy.hpp	/^	float targetRotation;$/;"	m	class:TankEnemy	typeref:typename:float
+ticks	PlayScene.hpp	/^	float ticks;$/;"	m	class:PlayScene	typeref:typename:float
+ticks	WinScene.hpp	/^	float ticks;$/;"	m	class:WinScene	typeref:typename:float
+timeSpan	DirtyEffect.hpp	/^	float timeSpan;$/;"	m	class:DirtyEffect	typeref:typename:float
+timeSpan	ExplosionEffect.hpp	/^	float timeSpan = 0.5;$/;"	m	class:ExplosionEffect	typeref:typename:float
+timeSpanLight	Plane.hpp	/^	const float timeSpanLight = 1;$/;"	m	class:Plane	typeref:typename:const float
+timeSpanShockwave	Plane.hpp	/^	const float timeSpanShockwave = 1;$/;"	m	class:Plane	typeref:typename:const float
+timeTicks	ExplosionEffect.hpp	/^	float timeTicks;$/;"	m	class:ExplosionEffect	typeref:typename:float
+timeTicks	Plane.hpp	/^	float timeTicks;$/;"	m	class:Plane	typeref:typename:float
+title	GameEngine.hpp	/^		const char* title{};$/;"	m	class:Engine::GameEngine	typeref:typename:const char *
+type	LOG.hpp	/^		LogType type;$/;"	m	class:Engine::LOG	typeref:typename:LogType
+update	GameEngine.cpp	/^	void GameEngine::update(float deltaTime) {$/;"	f	class:Engine::GameEngine	typeref:typename:void
+update_timer	GameEngine.hpp	/^		ALLEGRO_TIMER* update_timer{};$/;"	m	class:Engine::GameEngine	typeref:typename:ALLEGRO_TIMER *
+value	Slider.hpp	/^	float value = 0;$/;"	m	class:Slider	typeref:typename:float
+x	Point.hpp	/^		float x, y;$/;"	m	struct:Engine::Point	typeref:typename:float
+y	Point.hpp	/^		float x, y;$/;"	m	struct:Engine::Point	typeref:typename:float
+~Group	Group.cpp	/^	Group::~Group() {$/;"	f	class:Engine::Group
+~LOG	LOG.cpp	/^	LOG::~LOG() {$/;"	f	class:Engine::LOG
+~Resources	Resources.cpp	/^	Resources::~Resources() {$/;"	f	class:Engine::Resources
