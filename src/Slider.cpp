@@ -32,6 +32,7 @@ void Slider::SetOnValueChangedCallback(std::function<void(float value)> onValueC
 }
 void Slider::SetValue(float value) {
 	if (OnValueChangedCallback) {
+        this->Position.x = End1.Position.x + (End2.Position.x - End1.Position.x)*value;
         OnValueChangedCallback(value);
     }
 	// TODO 4 (3/6): Call 'OnValueChangedCallback' when value changed. Can imitate ImageButton's 'OnClickCallback'.
@@ -55,7 +56,6 @@ void Slider::OnMouseMove(int mx, int my) {
 	if (mx < End1.Position.x || End2.Position.x < mx) return;
 	float length = (float )(End2.Position.x - End1.Position.x);
 	float dvalue = (float )(mx - End1.Position.x) / length;
-	this->Position.x = mx;
 	// call setvalue
 	SetValue(dvalue);
 
